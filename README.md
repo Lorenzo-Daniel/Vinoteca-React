@@ -22,3 +22,5 @@
 ### SweetAlert:
 
 - **_npm install --save sweetalert2 sweetalert2-react-content_**
+
+![Vinoteca - Google Chrome 2022-10-13 18-21-01](https://user-images.githubusercontent.com/103971385/195714004-18847916-dc13-4354-9d50-995967d7c77f.gif)
