@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+.background_header {
+  background-color: rgba(124, 130, 140, 0.407);
+}
+
+.tangerine {
+  font-family: "Tangerine", serif;
+  text-shadow: 4px 4px 4px #aaa;
+  font-size: 60px;
+}
+
+.background li {
+  background-color: rgba(124, 130, 140, 0.407);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: white;
+}
+.btn-danger {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.btn-success {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+/* body{
+  background-image: url(./assets/images/viñedo7.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+} */
+
+.brand-style {
+  font-size: 130px;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
+.Ancho {
+  width: 18rem;
+}
+
+.back_img_maridaje {
+  background-image: url(/images/viñedo8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+}
+.back_img_cart {
+  background-image: url(/images/cart.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  min-height: 80vh;
+}
+
+.bg-darky {
+  background-color: rgba(0, 0, 0, 0.785);
+  color: white;
+}
+.carousel-item {
+  max-height: 86vh;
+}
