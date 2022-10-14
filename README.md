@@ -14,7 +14,6 @@
 
 ---
 
-![Vinoteca - Google Chrome 2022-10-14 14-21-25](https://user-images.githubusercontent.com/103971385/195919276-b838614c-c749-417f-9063-a011c7aadc15.gif)
 
 ### Características del desafío:
 
@@ -97,6 +96,8 @@ categoría.
 ---
 
 ### Desarrollado por _Daniel Lorenzo_
-=======
-- **_npm install --save sweetalert2 sweetalert2-react-content_**
+
+
+
+![Vinoteca - Google Chrome 2022-10-14 14-21-25](https://user-images.githubusercontent.com/103971385/195919276-b838614c-c749-417f-9063-a011c7aadc15.gif)
 
