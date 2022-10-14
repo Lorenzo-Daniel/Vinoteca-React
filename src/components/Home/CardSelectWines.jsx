@@ -7,9 +7,9 @@ const CardSelectWines = () => {
     return (
         <div className="border m-2 p-3">
             <div className="d-flex flex-column align-items-center my-5 fs-2">
-                <p className="text-center">Te damos la Bienvenida a Vinoteca | Vinos de España !</p>
-                <p className="text-center">En nuestra Vinoteca encontraras amplia variedad de vinos Españoles!</p>
-                <p className="text-center">Cada Producto tiene su descripción detallada, para que encuentres lo que estas buscando!</p>
+                <p className="text-center">¡Te damos la Bienvenida a Vinoteca | Vinos de España !  </p>
+                <p className="text-center">En nuestra Vinoteca encontrarás amplia variedad de vinos Españoles! </p>
+                <p className="text-center">Cada Producto tiene su descripción detallada, para que encuentres lo que estás buscando!</p>
             </div>
             <div className="container d-flex flex-column flex-md-row border mb-5 p-3 shadow-sm">
                 {categorias.map((product) => {
