@@ -6,7 +6,7 @@
 
 ---
 
-## Descripción:
+### Descripción:
 
 ### Vinoteca es un app web ficticia para comercio online de Vinos desarrollada con React JS.
 
@@ -14,7 +14,9 @@
 
 ---
 
-## Características del desafío:
+![Vinoteca - Google Chrome 2022-10-14 14-21-25](https://user-images.githubusercontent.com/103971385/195919276-b838614c-c749-417f-9063-a011c7aadc15.gif)
+
+### Características del desafío:
 
 ### User story/brief:
 
@@ -98,5 +100,3 @@ categoría.
 =======
 - **_npm install --save sweetalert2 sweetalert2-react-content_**
 
-![Vinoteca - Google Chrome 2022-10-13 18-21-01](https://user-images.githubusercontent.com/103971385/195714004-18847916-dc13-4354-9d50-995967d7c77f.gif)
->>>>>>> e86a95a5b22cd2c54de5c521855b71e09de02818
