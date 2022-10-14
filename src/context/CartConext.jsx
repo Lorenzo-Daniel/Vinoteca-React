@@ -15,6 +15,8 @@ const SwalFire = (texto) => {
     })
 }
 
+
+
 const CartContext = React.createContext([]);
 
 export const useCartContext = () => useContext(CartContext);
@@ -38,12 +40,33 @@ const CartProvider = ({ children }) => {
         let producto_eliminado = carrito.find(element => element.id === item.id)
         setCarrito(nuevo_array)
         SwalFire(`'${producto_eliminado.marca}'`);
+    }
 
+    const clearAlert = () => {
+        Swal.fire({
+            title: 'Estás seguro de vaciar el carro?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, vaciar el carro',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                setCarrito([])
+                Swal.fire(
+                    'Carrito eliminado!',
+                    'Tu carro de compras está vacío',
+                    'success'
+                )
+            }
+        })
     }
 
     const clear = () => {
         setCarrito([])
     }
+
 
     const isInCart = (itemId) => {
         return carrito.some(elemento => elemento.id === itemId)
@@ -61,16 +84,16 @@ const CartProvider = ({ children }) => {
 
 
     return (
-        <CartContext.Provider value={
-            {
-                addItem,
-                removeItem,
-                clear,
-                TotalCarrito,
-                precioTotal,
-                carrito
-            }
-        }>
+        <CartContext.Provider value={{
+            addItem,
+            removeItem,
+            clear,
+            TotalCarrito,
+            precioTotal,
+            clearAlert,
+            carrito
+        }}
+        >
             {children}
         </CartContext.Provider>
     );

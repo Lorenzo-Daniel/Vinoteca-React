@@ -1,6 +1,6 @@
 import React from "react";
 
-const CartDetail = ({ removeItem, producto }) => {
+const CartDetail = ({ removeItem, producto}) => {
     return (
         <div className="d-flex flex-column align-items-center  justify-content-evenly  gap-3 mt-5 mx-2 col-md-10 m-md-auto flex-md-row align-items-md-end mt-md-5 border p-2" >
             <div className="col-1 d-flex justify-content-center">
@@ -33,7 +33,7 @@ const CartDetail = ({ removeItem, producto }) => {
             </ul>
             <div className="col-1 d-flex justify-content-center">
                 <button className="btn bg-danger text-white" onClick={() => removeItem(producto)}>
-                    <i className="fa-solid fa-trash fs-2"></i>
+                    <i className="fa-solid fa-trash fs-6"></i>
                 </button>
             </div>
             <hr />

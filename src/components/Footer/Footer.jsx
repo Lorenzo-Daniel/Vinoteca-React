@@ -1,5 +1,4 @@
 import React from "react";
-import logo from '../../logo-copa.png'
 
 const Footer = () => {
     return (
@@ -8,7 +7,6 @@ const Footer = () => {
                 <div className="row m-0 background_header rounded-3 mb-4 py-4 px-5">
                     <div className="col-lg-4 d-flex flex-column justify-content-center ">
                         <div className="d-flex justify-content-center align-items-end">
-                            <img src={logo} width="70" className="" alt="" />
                             <p className="fs-6 mb-2 ">Visita nuestras redes sociales</p>
                         </div>
                         <div className="d-flex justify-content-center mb-3">
@@ -32,40 +30,14 @@ const Footer = () => {
                         <ul className="list-unstyled">
                             <li className="d-flex justify-content-between">
                                 <span className="text-center">
-                                    Lunes
+                                    Lunes a Jueves 
                                 </span>
                                 <span>
                                     9:00 - 24:00
                                 </span>
                             </li>
                             <hr className="m-0" />
-                            <li className="d-flex justify-content-between">
-                                <span className="text-left">
-                                    Martes
-                                </span>
-                                <span>
-                                    9:00 - 24:00
-                                </span>
-                            </li>
-                            <hr className="m-0" />
-                            <li className="d-flex justify-content-between">
-                                <span>
-                                    Mirecoles
-                                </span>
-                                <span>
-                                    9:00 - 24:00
-                                </span>
-                            </li>
-                            <hr className="m-0" />
-                            <li className="d-flex justify-content-between">
-                                <span>
-                                    Jueves
-                                </span>
-                                <span>
-                                    9:00 - 24:00
-                                </span>
-                            </li>
-                            <hr className="m-0" />
+                        
                             <li className="d-flex justify-content-between">
                                 <span>
                                     Viernes

@@ -1,12 +1,11 @@
 import React from "react";
 import ItemCount from "../ItemCount/ItemCount";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../context/CartConext";
 
 
 const ItemDetail = ({ item, clase }) => {
-    const [visible, setVisible] = useState(clase);
     const [irAlCarrito, setCarrito] = useState(true);
     const { addItem } = useCartContext();
 
@@ -15,15 +14,9 @@ const ItemDetail = ({ item, clase }) => {
         addItem(item, cantidad)
     }
 
-    useEffect(() => {
-        setTimeout(() => {
-            setVisible('')
-        }, 1000);
-    }, []);
-
 
     return (
-        <div className={`${visible} container`}>
+        <div className='container'>
             <h1 className="text-center border mt-5 bg-dark text-white py-3">{item.marca}</h1>
             <div className="d-flex justify-content-evenly align-items-center flex-wrap">
                 <div className=" pt-5">

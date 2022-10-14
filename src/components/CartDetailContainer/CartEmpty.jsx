@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const CartEmpty = () => {
     return (
-        <div className="container d-flex flex-column justify-content-between mt-5 p-5 rounded back_img_cart ">
+        <div className="container d-flex flex-column justify-content-between mt-1 mt-md-5 p-5 rounded back_img_cart ">
             <div>
                 <h1 className="text-white text-center">El carrito esta vacío</h1>
             </div>

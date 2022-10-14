@@ -6,11 +6,10 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
 
-
 const MySwal = withReactContent(Swal)
 const SwalFire = (texto) => {
     MySwal.fire({
-        title: <p> Debes Ingresar un dato en el campo {texto} </p>,
+        title: <p> {texto} </p>,
         confirmButtonColor: '#84202a'
     })
 }
@@ -20,9 +19,10 @@ const Checkout = () => {
     const { carrito, clear, precioTotal } = useCartContext();
     const [precioFinal, setPrecioFinal] = useState();
     const [nombre, setNombre] = useState('')
-    const [email, setEmail] = useState('')
+    const [email, setEmail] = useState('');
+    const [confirmEmail, setConfirmEmail] = useState('');
     const [apellido, setApellido] = useState('')
-    const [orderId, setOrderId] = useState([])
+    const [orderId, setOrderId] = useState([]);
 
 
     useEffect(() => {
@@ -31,16 +31,20 @@ const Checkout = () => {
 
 
     const sendOrder = () => {
-
         if (nombre === '') {
-            SwalFire('Nombre')
+            SwalFire('  Debes Ingresar un dato en el campo Nombre')
             return false;
         } else if (apellido === '') {
-            SwalFire('Apellido')
+            SwalFire('  Debes Ingresar un dato en el campo Apellido')
             return false;
         } else if (email === '') {
-            SwalFire('email')
+            SwalFire(' Debes Ingresar un dato en el campo email')
             return false;
+        } else if (confirmEmail === '') {
+            SwalFire(' Debes Ingresar un dato en el campo Confirmar email')
+            return false
+        } else if (confirmEmail !== email) {
+            SwalFire('La direccion email no coincide')
         } else {
 
             const client = {
@@ -68,8 +72,8 @@ const Checkout = () => {
 
             const db = getFirestore();
             const newColl = collection(db, 'ordenes');
-            addDoc(newColl, order).then(res => setOrderId(res.id))
-            clear()
+            addDoc(newColl, order).then(res => setOrderId(res.id));
+            clear();
         }
     }
 
@@ -91,8 +95,12 @@ const Checkout = () => {
                         <label className="form-label">email</label>
                         <input type="email" className="form-control" placeholder="Ingresá tu email" onInput={(e) => setEmail(e.target.value)} />
                     </div>
+                    <div className="mb-3">
+                        <label className="form-label">confirmar email</label>
+                        <input type="email" className="form-control" placeholder="Ingresá tu email" onInput={(e) => setConfirmEmail(e.target.value)} />
+                    </div>
                     <button type="submit" className="btn btn-primary" onClick={sendOrder}>
-                        enviar
+                        Finalizar
                     </button>
                 </form>
                 <div className="col ">
