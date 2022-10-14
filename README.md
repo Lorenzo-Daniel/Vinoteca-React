@@ -26,6 +26,7 @@
 
 ### Componentes sugeridos:
 
+<<<<<<< HEAD
 - Navbar
 - Menu
 - CartWidget
@@ -94,3 +95,8 @@ categoría.
 ---
 
 ### Desarrollado por _Daniel Lorenzo_
+=======
+- **_npm install --save sweetalert2 sweetalert2-react-content_**
+
+![Vinoteca - Google Chrome 2022-10-13 18-21-01](https://user-images.githubusercontent.com/103971385/195714004-18847916-dc13-4354-9d50-995967d7c77f.gif)
+>>>>>>> e86a95a5b22cd2c54de5c521855b71e09de02818
