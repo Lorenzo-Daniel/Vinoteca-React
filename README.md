@@ -1,4 +1,4 @@
-# Proyecto Final _E-commerce_ | React JS
+# Proyecto Final _e-commerce_ | React JS
 
 ### Consigna:
 
