@@ -70,7 +70,7 @@ categoría.
   - Items con sus cantidades
   - Total de la orden
   - Input para nombre, apellido y teléfono
-  - Input para email y lógica de repetir el email 2 veces (a excepción de que realicen el desafío extra de auth, en ese caso no sería necesario)
+  - Input para email y lógica de repetir el email 2 veces.
 - Finalizada la orden, debo recibir mi order id con el id del objeto de firebase.
 - La navegabilidad debe ocurrir utilizando el router, y no href’s o location.
 
@@ -84,7 +84,7 @@ categoría.
 
 ---
 
-### Luego de clonar el repositorio, posiciónate ven la carpeta VinotecaReact y ejecuta _npm install_ para instalar las dependencias:
+### Luego de clonar el repositorio, posiciónate en la carpeta VinotecaReact y ejecuta _npm install_ para instalar las dependencias:
 
 - "bootstrap": "^5.2.0",
 - "firebase": "^9.10.0",
